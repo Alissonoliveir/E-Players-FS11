@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: "Roboto-Medium";
+    src: url(../fonts/Roboto-Medium.ttf);
+    }
+    @font-face {
+        font-family: "TitilliumWeb-SemiBold";
+        src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+    }
+
+body {
+    font-family: "Roboto-Regular";
+}
+
+
+
+.cabecalho{
+    background-color: #1e1c21;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-principal{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-principal a {
+    color: white;
+    padding: 20px 15px 20px 15px;
+    text-transform: uppercase;
+}
+
+.banner{
+    width: 100%;
+    height: 610px;
+    background-color: #c31616;
+    background-image: url(../images/banner_pilotos.png);
+    background-repeat: no-repeat;
+}
+
+.banner-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100% !important;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 500px;
+    height: 280px;
+}
+.banner-info h2 {
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 80px;
+}
+.banner-info p {
+    font-family: "Roboto-Medium";
+    text-align: center;
+    font-size: 24px;
+    margin-top: -45;
+}
+.banner-info a {
+    color: white;
+    font-size: 24px;
+    background-color: #c31616;
+    width: 270px;
+    height: 60px;
+    margin-inline: auto;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.jogos{
+    background-color: #1e1c21;
+}
+
+.jogos-images{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos{
+    background-color: #1e1c21;
+}
+.produtos h2, .row{
+    margin: 0;
+    color: white;
+}
