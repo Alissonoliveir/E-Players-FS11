@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: "Roboto-Medium";
+    src: url(../fonts/Roboto-Medium.ttf);
+    }
+    @font-face {
+        font-family: "TitilliumWeb-SemiBold";
+        src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    height: 100vh;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    background-color: #1e1c21;
+    color: white;
+    padding: 20px;
+    
+}
+.frm-login{
+    width: 90vw;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 30px;
+    background-color: rgb(228, 225, 225);
+    border-radius: 12px;
+}
+
+.imput-field{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: #fa7979;
+}
+.imput-field::placeholder{
+    color: #fa7979;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-form{
+    width: 48%;
+    height: 40px;
+    border: 1px solid #fa7979;
+    color: #fa7979;
+}
+
+.frm-login label{
+    display: none;
+}
+.imput-field:focus{
+    border-bottom: 1px solid #fa7979;
+}
+
+@media screen and ( min-width: 768px) {
+    .frm-login{
+        width: 60vw;
+        height: 50vh;
+        padding: 50px 40px;
+    }
+    .imput-field{
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        padding: 35px 15px;
+    }
+    .btn-form{
+        font-size: 1.3rem;
+        height: 40px;
+    }
+}
+
+@media screen and ( min-width: 992px){
+    .frm-login{
+        width: 50vw;
+        max-width: 900px;
+        height: auto;
+        padding: 50px 40px;
+    }
+    .btn-form{
+        cursor: pointer;
+    }
+
+}

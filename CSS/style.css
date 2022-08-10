@@ -115,6 +115,10 @@ body {
 
 .produtos{
     background-color: #1e1c21;
+    padding: 40px 0;
+}
+.produtos h2{
+    font-size: 1.5rem;
 }
 .produtos h2, .row{
     margin: 0;
@@ -126,13 +130,13 @@ body {
 }
 
 .btn-danger {
-   background-color: salmon;
-   border: 1px solid salmon;
+   background-color: #c31616;
+   border: 1px solid #c31616;
 }
 
 .btn-danger:hover {
-    background-color: #f76555;
-    border: 1px solid #f76555 ;
+    background-color: #ac1515;
+    border: 1px solid #ac1515 ;
 }
 
 .card {
@@ -183,6 +187,39 @@ body {
         color: white;
     }
 
+    ..banner-box{
+        justify-content: center;
+    }
+
+    .menu-principal{
+        position: fixed;
+        bottom: 0;
+        left: -80%;
+        z-index: 10;
+
+
+        width: 80%;
+        height: 100%;
+        background-color: rgba(30, 28, 33, 0.95);
+
+        flex-direction: column;
+        justify-content: center;
+
+        transition: left 0.5s;
+    }
+
+    .menu-principal a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+        height: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+
+        border-left: 3px dotted white;
+    }
+
     
 }
 
@@ -206,7 +243,7 @@ body {
 
         width: 80%;
         height: 100%;
-        background-color: #1e1c21;
+        background-color: rgba(30, 28, 33, 0.95);
 
         flex-direction: column;
         justify-content: center;
@@ -216,12 +253,14 @@ body {
 
     .menu-principal a{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 80%;
         height: 30px;
-        margin-bottom: 20px;
-        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1rem;
+        border-left: 2px dotted white;
+
     }
 
     
